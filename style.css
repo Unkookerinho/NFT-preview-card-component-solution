@@ -126,11 +126,11 @@ h1 {
     color:hsl(178, 100%, 50%);
 }
 
-.attribution { 
+footer { 
     font-size: 11px; 
     text-align: center;
     color: hsl(215, 51%, 70%); 
 }
-.attribution a { 
+footer a { 
     color: hsl(228, 45%, 44%); 
 }
