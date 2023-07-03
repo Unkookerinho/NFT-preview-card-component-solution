@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1.5em;
+    border-radius: 15px;
+    max-height: 50em;
+    max-width: 19em;
+}
+
+.big-image {
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-image::after {
+    background: hsla(178, 100%, 50%, 0.5);
+    content: url(images/icon-view.svg);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.big-image:hover::after {
+    opacity: 1
+}
+
+.big-image img {
+    width: 100%;
+    display: block;
+}
+
+.creation {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    font-size: 16px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 1em
+}
+
+.creation-text {
+    transform: translateY(0.35em);
+}
+
+.description {
+    padding-bottom: 0.8em;
+    line-height: 1.5em;
+}
+
+.info {
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    display:inline-block;
+    margin-right: 0.3em;
+    transform:translateY(0.15em)
+}
+
+.avatar {
+    width: 2em;
+    height: 2em;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+.time {
+    font-size: 1.05rem;
+}
+
+p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+h1 {
+    font-size: 1.35rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1em 0;
+}
+
+.value {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+.name:hover, h1:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(215, 51%, 70%); 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
